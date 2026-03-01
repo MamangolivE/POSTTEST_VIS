@@ -23,13 +23,13 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         lblIPK = New Label()
-        nilaiIPK = New Label()
         txtIP = New TextBox()
         btnTambah = New Button()
         lblPredikat = New Label()
         Label1 = New Label()
         btnReset = New Button()
         Label2 = New Label()
+        nilaiIPK = New Label()
         SuspendLayout()
         ' 
         ' lblIPK
@@ -40,15 +40,6 @@ Partial Class Form1
         lblIPK.Size = New Size(41, 20)
         lblIPK.TabIndex = 0
         lblIPK.Text = "IPK : "
-        ' 
-        ' nilaiIPK
-        ' 
-        nilaiIPK.AutoSize = True
-        nilaiIPK.Location = New Point(414, 134)
-        nilaiIPK.Name = "nilaiIPK"
-        nilaiIPK.Size = New Size(17, 20)
-        nilaiIPK.TabIndex = 1
-        nilaiIPK.Text = "0"
         ' 
         ' txtIP
         ' 
@@ -71,7 +62,7 @@ Partial Class Form1
         ' lblPredikat
         ' 
         lblPredikat.AutoSize = True
-        lblPredikat.Location = New Point(416, 179)
+        lblPredikat.Location = New Point(411, 179)
         lblPredikat.Name = "lblPredikat"
         lblPredikat.Size = New Size(15, 20)
         lblPredikat.TabIndex = 4
@@ -109,19 +100,28 @@ Partial Class Form1
         Label2.TabIndex = 7
         Label2.Text = "IP Semester : "
         ' 
+        ' nilaiIPK
+        ' 
+        nilaiIPK.AutoSize = True
+        nilaiIPK.Location = New Point(411, 134)
+        nilaiIPK.Name = "nilaiIPK"
+        nilaiIPK.Size = New Size(15, 20)
+        nilaiIPK.TabIndex = 8
+        nilaiIPK.Text = "-"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.OldLace
         ClientSize = New Size(800, 450)
+        Controls.Add(nilaiIPK)
         Controls.Add(Label2)
         Controls.Add(btnReset)
         Controls.Add(Label1)
         Controls.Add(lblPredikat)
         Controls.Add(btnTambah)
         Controls.Add(txtIP)
-        Controls.Add(nilaiIPK)
         Controls.Add(lblIPK)
         ForeColor = Color.Black
         Name = "Form1"
@@ -131,12 +131,12 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents lblIPK As Label
-    Friend WithEvents nilaiIPK As Label
     Friend WithEvents txtIP As TextBox
     Friend WithEvents btnTambah As Button
     Friend WithEvents lblPredikat As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents btnReset As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents nilaiIPK As Label
 
 End Class
