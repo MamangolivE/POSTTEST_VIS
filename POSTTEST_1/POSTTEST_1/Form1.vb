@@ -3,14 +3,20 @@
     Dim jumlahSemester As Integer = 0
 
     Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+
+        If txtIP.Text = "" Then
+            MessageBox.Show("Masukkan Angka!")
+            Exit Sub
+        End If
+
         Dim ips As Double
         If Not Double.TryParse(txtIP.Text, ips) Then
-            MessageBox.Show("Input Harus Angka")
+            MessageBox.Show("Input Harus Angka!")
             Exit Sub
         End If
 
         If ips < 0 Or ips > 4 Then
-            MessageBox.Show("IP Tidak Valid")
+            MessageBox.Show("IP Tidak Valid!")
             Exit Sub
         End If
 
@@ -30,6 +36,16 @@
             lblPredikat.Text = "-"
         End If
 
+        txtIP.Clear()
+        txtIP.Focus()
+    End Sub
 
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        totalIPK = 0
+        jumlahSemester = 0
+
+        nilaiIPK.Text = "0.00"
+        lblPredikat.Text = "-"
+        txtIP.Clear()
     End Sub
 End Class

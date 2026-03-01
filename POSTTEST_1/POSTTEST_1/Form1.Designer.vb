@@ -35,7 +35,7 @@ Partial Class Form1
         ' lblIPK
         ' 
         lblIPK.AutoSize = True
-        lblIPK.Location = New Point(351, 149)
+        lblIPK.Location = New Point(351, 134)
         lblIPK.Name = "lblIPK"
         lblIPK.Size = New Size(41, 20)
         lblIPK.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class Form1
         ' nilaiIPK
         ' 
         nilaiIPK.AutoSize = True
-        nilaiIPK.Location = New Point(411, 149)
+        nilaiIPK.Location = New Point(414, 134)
         nilaiIPK.Name = "nilaiIPK"
         nilaiIPK.Size = New Size(17, 20)
         nilaiIPK.TabIndex = 1
@@ -52,9 +52,9 @@ Partial Class Form1
         ' 
         ' txtIP
         ' 
-        txtIP.Location = New Point(430, 218)
+        txtIP.Location = New Point(411, 218)
         txtIP.Name = "txtIP"
-        txtIP.Size = New Size(60, 27)
+        txtIP.Size = New Size(73, 27)
         txtIP.TabIndex = 2
         txtIP.TextAlign = HorizontalAlignment.Center
         ' 
@@ -62,7 +62,7 @@ Partial Class Form1
         ' 
         btnTambah.Location = New Point(411, 262)
         btnTambah.Name = "btnTambah"
-        btnTambah.Size = New Size(94, 29)
+        btnTambah.Size = New Size(114, 29)
         btnTambah.TabIndex = 3
         btnTambah.Text = "Tambah"
         btnTambah.UseVisualStyleBackColor = True
@@ -70,16 +70,17 @@ Partial Class Form1
         ' lblPredikat
         ' 
         lblPredikat.AutoSize = True
-        lblPredikat.Location = New Point(411, 186)
+        lblPredikat.Location = New Point(416, 179)
         lblPredikat.Name = "lblPredikat"
         lblPredikat.Size = New Size(15, 20)
         lblPredikat.TabIndex = 4
         lblPredikat.Text = "-"
+        lblPredikat.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(318, 186)
+        Label1.Location = New Point(318, 179)
         Label1.Name = "Label1"
         Label1.Size = New Size(74, 20)
         Label1.TabIndex = 5
@@ -88,10 +89,10 @@ Partial Class Form1
         ' btnReset
         ' 
         btnReset.BackColor = Color.Red
-        btnReset.Location = New Point(298, 262)
+        btnReset.Location = New Point(278, 262)
         btnReset.Margin = New Padding(0)
         btnReset.Name = "btnReset"
-        btnReset.Size = New Size(94, 29)
+        btnReset.Size = New Size(114, 29)
         btnReset.TabIndex = 6
         btnReset.Text = "Reset"
         btnReset.UseCompatibleTextRendering = True
@@ -100,7 +101,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(318, 221)
+        Label2.Location = New Point(298, 221)
         Label2.Name = "Label2"
         Label2.Size = New Size(97, 20)
         Label2.TabIndex = 7
