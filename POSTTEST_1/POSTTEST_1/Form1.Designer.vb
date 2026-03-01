@@ -52,6 +52,7 @@ Partial Class Form1
         ' 
         ' txtIP
         ' 
+        txtIP.BackColor = SystemColors.Window
         txtIP.Location = New Point(411, 218)
         txtIP.Name = "txtIP"
         txtIP.Size = New Size(73, 27)
@@ -89,6 +90,7 @@ Partial Class Form1
         ' btnReset
         ' 
         btnReset.BackColor = Color.Red
+        btnReset.ForeColor = Color.Transparent
         btnReset.Location = New Point(278, 262)
         btnReset.Margin = New Padding(0)
         btnReset.Name = "btnReset"
@@ -111,6 +113,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.OldLace
         ClientSize = New Size(800, 450)
         Controls.Add(Label2)
         Controls.Add(btnReset)
@@ -120,6 +123,7 @@ Partial Class Form1
         Controls.Add(txtIP)
         Controls.Add(nilaiIPK)
         Controls.Add(lblIPK)
+        ForeColor = Color.Black
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
